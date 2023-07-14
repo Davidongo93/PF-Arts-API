@@ -6,6 +6,7 @@ const favoritesRouter = require('./favoritesRouter.js');
 const transRouter = require('./transRouter.js');
 const reviewsRouter = require('./reviewsRouter.js');
 const adminRouter = require('./adminRouter.js');
+const faviconController = require('../controllers/faviconController/faviconController.js')
 
 // Setting up routers first it must be defined and import his file
 router.use('/users', usersRouter);
@@ -14,5 +15,5 @@ router.use('/favorites', favoritesRouter);
 router.use('/transactions', transRouter);
 router.use('/reviews', reviewsRouter);
 router.use('/admin', adminRouter);
-
+router.get('/favicon.ico', faviconController);
 module.exports = router;
