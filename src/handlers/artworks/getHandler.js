@@ -23,7 +23,7 @@ const getArtworkHandler = async (req, res) => {
       });
 
       if (author.length === 0) {
-        throw Error('User not available');
+        throw Error('User/Artist not available');
       } else {
         res.status(200).json(author);
       }
