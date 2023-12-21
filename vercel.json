@@ -1,27 +1,5 @@
 {
   "routes": [
-    {
-      "src": "/artworks",
-      "dest": "/path/to/artworksRouter.js"
-    },
-    {
-      "src": "/artworks",
-      "methods": ["GET"],
-      "dest": "/controllers/artworks/getController.js"
-    },
-    {
-      "src": "/artworks/detail/:id",
-      "methods": ["GET"],
-      "dest": "/controllers/artworks/getByIDController.js"
-    },
-    {
-      "src": "/artworks/db",
-      "methods": ["GET"],
-      "dest": "/controllers/artworks/filterController.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/path/to/index.js"
-    }
+    { "handle": "src/app.js", "src": "/.*" }
   ]
 }
