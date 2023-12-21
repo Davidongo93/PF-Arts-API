@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "handle": "src/app.js", "src": "/.*" }
+    { "src": "/.*", "dest": "/src/app.js" }
   ]
 }
