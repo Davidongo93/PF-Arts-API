@@ -3,6 +3,7 @@ const URL = 'https://www.wikiart.org/en/api/2/MostViewedPaintings';
 const { Artwork, User } = require('../../db');
 
 const getAllArtwork = async () => {
+  console.log("reach artwork");
   const count = await Artwork.count();
   if (count === 0) {
     throw Error('No artworks available');
